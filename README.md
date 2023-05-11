@@ -36,9 +36,9 @@ We follow Google recommended [Guide to app architecture](https://developer.andro
 * **ViewModel**: It keeps the logic away from View layer, provides data streams for UI and handle user interactions.
 * **Model**: Repository pattern, data layers that provide interface to manipulate data from both the local and remote data sources. The local data sources will serve as [single source of truth](https://en.wikipedia.org/wiki/Single_source_of_truth).
 
-|         Home Screen           |           Details Screen            |                Details Screen             |
+|         Home Screen           |           Favorite Screen            |                Details Screen             |
 | :----------------------------------: | :---------------------------------------: | :---------------------------------------: |
-|      ![resim](https://user-images.githubusercontent.com/36333407/226935107-12378616-9289-484b-b317-2dd69bdfd832.png)      |        ![Screenshot_20230322_164433](https://user-images.githubusercontent.com/36333407/226935206-07c7647b-89c7-4a46-a62c-b7efd4745c24.png)         |        ![Screenshot_20230322_164411](https://user-images.githubusercontent.com/36333407/226935247-f98d5e22-2c81-409a-92b0-4f33fa5cd36c.png)       |
+|      <img src="https://github.com/Ozatac/Crypto-Apps/assets/36333407/09afde73-435f-4248-a287-e25aa5daac16" width="225" height="500"/>      |        <img src="https://github.com/Ozatac/Crypto-Apps/assets/36333407/74251e70-b5b5-436b-a78f-918c8415ffaf" width="225" height="500"/>         |        <img src="https://github.com/Ozatac/Crypto-Apps/assets/36333407/176216f4-177f-4021-a654-4c0c8d651284" width="225" height="500"/>       |
 
 ## 👨🏻‍💻 Developed By
 
