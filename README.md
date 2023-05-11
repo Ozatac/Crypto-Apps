@@ -42,8 +42,7 @@ We follow Google recommended [Guide to app architecture](https://developer.andro
 
 |         Splash Screen           |           Login Screen            |                Sign Up Screen             |
 | :----------------------------------: | :---------------------------------------: | :---------------------------------------: |
-|      <img src="https://github.com/Ozatac/Crypto-Apps/assets/36333407/f1206290-8148-4879-86a5-0be4790f0fe6" width="225" height="500"/>      |        <img src="https://github.com/Ozatac/Crypto-Apps/assets/36333407/8f63d765-b682-40a8-a384-969c28967d12" width="225" height="500"/>
-         |        <img src="https://github.com/Ozatac/Crypto-Apps/assets/36333407/2dcfbd9e-e93e-4c6d-b74f-39f15b2c13a3" width="225" height="500"/>       |
+|      <img src="https://github.com/Ozatac/Crypto-Apps/assets/36333407/f1206290-8148-4879-86a5-0be4790f0fe6" width="225" height="500"/>      |        <img src="https://github.com/Ozatac/Crypto-Apps/assets/36333407/8f63d765-b682-40a8-a384-969c28967d12" width="225" height="500"/>                  |        <img src="https://github.com/Ozatac/Crypto-Apps/assets/36333407/2dcfbd9e-e93e-4c6d-b74f-39f15b2c13a3" width="225" height="500"/>       |
 
 ## 👨🏻‍💻 Developed By
 
