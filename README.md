@@ -39,7 +39,8 @@ We follow Google recommended [Guide to app architecture](https://developer.andro
 
 |         Home Screen           |           Details Screen            |                Details Screen             |
 | :----------------------------------: | :---------------------------------------: | :---------------------------------------: |
-|      ![resim](Screenshot_20230511_222348.png)      |        ![Screenshot_20230322_164433](https://user-images.githubusercontent.com/36333407/226935206-07c7647b-89c7-4a46-a62c-b7efd4745c24.png)         |        ![Screenshot_20230322_164411](https://user-images.githubusercontent.com/36333407/226935247-f98d5e22-2c81-409a-92b0-4f33fa5cd36c.png)       |
+|      ![Screenshot_20230511_222348](https://github.com/Ozatac/Crypto-Apps/assets/36333407/d09c8004-337f-4108-b784-acd86f665f3c)
+    |        ![Screenshot_20230322_164433](https://user-images.githubusercontent.com/36333407/226935206-07c7647b-89c7-4a46-a62c-b7efd4745c24.png)         |        ![Screenshot_20230322_164411](https://user-images.githubusercontent.com/36333407/226935247-f98d5e22-2c81-409a-92b0-4f33fa5cd36c.png)       |
 
 ## 👨🏻‍💻 Developed By
 
