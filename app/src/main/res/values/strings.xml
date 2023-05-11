@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">CryptoApps</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="bottom_nav_menu_home">Home</string>
+    <string name="bottom_nav_menu_favoites">Favorites</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="email">Email</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="password_confirm">Confirm Password</string>
+    <string name="already_an_user_login">Already an user? Login</string>
+    <string name="login">Login</string>
+    <string name="not_yet_registered_sign_up">Not yet registered? Sign Up</string>
+    <string name="login_enter_email_error">Please enter email.</string>
+    <string name="login_enter_password_error">Please enter password.</string>
+    <string name="register_email_error">Please enter the valid email address.</string>
+    <string name="register_not_match_password_error">The passwords you entered are not the same.</string>
+    <string name="register_password_error">Enter your password at least six characters.</string>
+    <string name="register_success">Registration successful.</string>
+    <string name="todo">TODO</string>
+    <string name="search_hint">Search</string>
+    <string name="loading">Loading</string>
+    <string name="favourite_add_success">Successfully added to favorites.</string>
+    <string name="favourite_delete_success">Successfully removed from favorites.</string>
+    <string name="coin_highest_price_24h">Highest(24h):</string>
+    <string name="coin_lowest_price_24h">Lowest(24h):</string>
+    <string name="coin_refresh_time">Refresh Interval (sec) </string>
+    <string name="coin_hashing_algorithm">Hashing Algorithm</string>
+    <string name="coin_description">Description</string>
+    <string name="add">Add</string>
+</resources>

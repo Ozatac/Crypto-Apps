@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.tunahanozatac.cryptoapps.domain.model.CoinMarketsUI" />
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/currencyCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="8dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="12dp">
+
+            <ImageView
+                android:id="@+id/currencyImageView"
+                setImage="@{model.image}"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="6dp"
+                android:contentDescription="@string/todo"
+                app:layout_constraintBottom_toBottomOf="@+id/currencySymbolTextView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/currencyNameTextView"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <ProgressBar
+                android:id="@+id/loadingInc"
+                style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Large"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="6dp"
+                android:indeterminateTint="@color/lavender"
+                android:progressTint="@color/lavender"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/currencySymbolTextView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/currencyNameTextView" />
+
+            <TextView
+                android:id="@+id/currencyNameTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="8dp"
+                android:text="@{model.name}"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/currencyPriceTextView"
+                app:layout_constraintStart_toEndOf="@+id/currencyImageView"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Bitcoin" />
+
+            <TextView
+                android:id="@+id/currencySymbolTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@{'$' + String.valueOf(model.coinId)}"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/currencyNameTextView"
+                app:layout_constraintTop_toBottomOf="@+id/currencyNameTextView"
+                tools:text="BTC" />
+
+            <TextView
+                android:id="@+id/currencyPriceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:text="@{'$' + String.valueOf(model.currentPrice)}"
+                app:layout_constraintBottom_toBottomOf="@+id/currencyNameTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/currencyNameTextView"
+                tools:text="123.35353" />
+
+            <ImageView
+                android:id="@+id/currencyChangeImageView"
+                setIncreaseDecrease="@{model.priceChangePercentage24h}"
+                android:layout_width="19dp"
+                android:layout_height="21dp"
+                app:layout_constraintBottom_toBottomOf="@+id/currencyChangeTextView"
+                app:layout_constraintEnd_toStartOf="@+id/currencyChangeTextView"
+                app:layout_constraintTop_toTopOf="@+id/currencyChangeTextView"
+                tools:srcCompat="@drawable/ic_arrow_down" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/currencyChangeTextView"
+                priceChangePercentage24h="@{model.priceChangePercentage24h}"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/currencyPriceTextView"
+                app:layout_constraintStart_toStartOf="@+id/currencyPriceTextView"
+                app:layout_constraintTop_toBottomOf="@+id/currencyPriceTextView"
+                tools:text="12.45" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

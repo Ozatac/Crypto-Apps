@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ui.register.RegisterFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/lavender_border"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_up"
+                android:textAlignment="center"
+                android:textColor="@color/lavender"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/signup_email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/lavender_border"
+                android:drawableStart="@drawable/ic_baseline_email_24"
+                android:drawablePadding="8dp"
+                android:hint="@string/email"
+                android:padding="8dp"
+                android:textColor="@color/grey" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/signup_password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/lavender_border"
+                android:drawableStart="@drawable/ic_baseline_lock_24"
+                android:drawablePadding="8dp"
+                android:hint="@string/password"
+                android:padding="8dp"
+                android:textColor="@color/grey" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/signup_password_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/lavender_border"
+                android:drawableStart="@drawable/ic_baseline_lock_24"
+                android:drawablePadding="8dp"
+                android:hint="@string/password_confirm"
+                android:inputType="textPassword"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/errorText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/sign_up"
+                android:textAlignment="center"
+                android:textColor="@color/red"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/signup_button"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/lavender"
+                android:text="@string/sign_up"
+                android:textSize="18sp"
+                app:cornerRadius="20dp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/loginRedirectText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:padding="8dp"
+                android:text="@string/already_an_user_login"
+                android:textColor="@color/lavender"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/errorInc"
+            layout="@layout/cell_error"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/loadingInc"
+            layout="@layout/loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

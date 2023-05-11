@@ -1,0 +1,38 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    ext {
+        firebase_bom_version = "26.7.0"
+        glideVersion = '4.13.2'
+        navigationVersion = '2.5.3'
+        kotlinReflectVersion = '1.6.21'
+        recyclerViewVersion = '1.3.0-alpha02'
+        lottieVersion = '4.2.2'
+        fragmentKtxVersion = '1.4.1'
+        coroutinesVersion = '1.5.2'
+        coroutinesLifeCycleVersion = '2.4.1'
+        hiltVersion = '2.44'
+        hiltCompilerVersion = '2.37'
+        hiltAndroidxCompilerVersion = '1.0.0'
+        hiltLifecycleVMVersion = '1.0.0-alpha03'
+        retrofitVersion = '2.9.0'
+        retrofitOkhttpVersion = '5.0.0-alpha.2'
+        pagingVersion = '3.1.1'
+        room_version = '2.4.3'
+        google_service_version = "4.3.5"
+        single_live_event_version = "1.2.0"
+        circle_image_view_version = "3.1.0"
+    }
+    dependencies {
+        classpath 'com.google.dagger:hilt-android-gradle-plugin:2.44'
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:2.5.3"
+        classpath "com.google.gms:google-services:$google_service_version"
+    }
+}
+
+plugins {
+    id 'com.android.application' version '7.3.1' apply false
+    id 'com.android.library' version '7.3.1' apply false
+    id 'org.jetbrains.kotlin.android' version '1.8.10' apply false
+    id 'androidx.navigation.safeargs' version '2.4.2' apply false
+    id 'com.google.dagger.hilt.android' version '2.41' apply false
+}
